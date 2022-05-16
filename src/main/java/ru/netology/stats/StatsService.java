@@ -11,25 +11,24 @@ public class StatsService {
     }
 
 
-
     public int average(int[] monthResult) {
 
         return findSum(monthResult) / monthResult.length;
     }
 
 
-
     public int maxSales(int[] monthResult) {
         int max = 0;
         int month = 0;
         for (int i : monthResult) {
-            if (i>= monthResult[max]) {
-                max=month;
+            if (i >= monthResult[max]) {
+                max = month;
             }
-            month=month+1;
+            month = month + 1;
         }
-        return max+1;
+        return max + 1;
     }
+
     public int minSales(int[] monthResult) {
         int min = 0;
         int month = 0;
